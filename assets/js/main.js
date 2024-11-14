@@ -10,7 +10,7 @@
   var fireDefaults = {
     origin: { y: 0.7 }
   };
-  
+
   var heartDefaults = {
     spread: 360,
     ticks: 50,
@@ -34,7 +34,7 @@
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '#m-button-no', function(e) {
+  $(document).on('mouseenter', '#m-button-no', function(e) {
     var vHeight = $(window).height();
     var vWidth = $(window).width();
     $(this).offset({ top: Math.floor(Math.random() * vHeight), left: Math.floor(Math.random() * vWidth) });

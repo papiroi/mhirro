@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Coming Soon', cursive;
   color: #272829;
   background: transparent;
 }
@@ -19,6 +19,10 @@ body {
   position: absolute;
   zindex: 1;
   pointer-events: none;
+}
+
+.fade#hello {
+  transition: opacity 3s linear;
 }
 
 a {

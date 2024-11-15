@@ -6,6 +6,10 @@
 */
 !(function($) {
 
+  $(document).ready(function(){
+    $("#hello").addClass("show");
+  });
+
   var count = 200;
   var fireDefaults = {
     origin: { y: 0.7 }
@@ -42,6 +46,9 @@
   });
 
   $(document).on('click', '#m-button-yes', function(e) {
+
+  
+    $('.carousel').carousel('cycle');
     var duration = 15 * 1000;
     var animationEnd = Date.now() + duration;
     var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
